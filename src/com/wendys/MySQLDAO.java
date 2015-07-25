@@ -26,7 +26,7 @@ public class MySQLDAO {
 	// NO PARAMETERS FOR THE QUERY
 	public ResultSet executeQuery(String query) throws SQLException {
 		PreparedStatement statement = prepSQL(query);
-		System.out.println(new Date()+ " Query: " + statement.toString());
+		System.out.println(new Date()+ "No parameter query Query: " + statement.toString());
 		ResultSet inventory = statement.executeQuery();
 		return inventory;
 	}
